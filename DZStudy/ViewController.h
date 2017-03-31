@@ -6,9 +6,9 @@
 //  Copyright © 2017年 Dong Zheng Tech. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "DZBaseViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : DZBaseViewController
 
 
 @end

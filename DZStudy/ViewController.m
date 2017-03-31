@@ -8,24 +8,31 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+#import "DZRuntimeViewController.h"
+#import "DZMultithreadingViewController.h"
+#import "DZRuntimeViewController.h"
 
+#import "DZBaseViewModel.h"
+
+#import "DZUtils.h"
+
+@interface ViewController ()
 @end
 
 @implementation ViewController
 
+- (instancetype)initWithCoder:aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        self.dataSource = [DZUtils dataSourceWithFileName:@"HomeViewDataSource"];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"我是东正";
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"DZ";
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

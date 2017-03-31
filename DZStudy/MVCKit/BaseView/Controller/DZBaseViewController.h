@@ -10,4 +10,6 @@
 
 @interface DZBaseViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *dataSource;
+
 @end
