@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *controllerName;
+@property (nonatomic, strong) NSString *url;
 
 @end

@@ -32,7 +32,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"DZ";
+    self.title = @"基本知识";
 }
 
 @end

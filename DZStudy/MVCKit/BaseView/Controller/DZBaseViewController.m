@@ -7,11 +7,11 @@
 //
 
 #import "DZBaseViewController.h"
-#import "DZBaseViewModel.h"
+#import <SafariServices/SafariServices.h>
 
 static const CGFloat kMargin = 15.f;
 
-@interface DZBaseViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface DZBaseViewController () 
 
 @property (nonatomic, strong) UITableView *tableView;
 
@@ -58,6 +58,7 @@ static const CGFloat kMargin = 15.f;
     DZBaseViewModel *propertyModel = [self.dataSource objectAtIndex:indexPath.row];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     cell.textLabel.text = propertyModel.title;
+    cell.textLabel.numberOfLines = 3;
     cell.textLabel.font = [UIFont systemFontOfSize:14.f];
     cell.textLabel.textColor = [UIColor blueColor];
     return cell;
@@ -72,11 +73,16 @@ static const CGFloat kMargin = 15.f;
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     DZBaseViewModel *propertyModel = [self.dataSource objectAtIndex:indexPath.row];
-    if (!propertyModel.controllerName) { return; }
-    
-    Class class = NSClassFromString(propertyModel.controllerName);
-    UIViewController *controller = [class new];
-    [self.navigationController pushViewController:controller animated:YES];
+    if (propertyModel.controllerName) {
+        Class class = NSClassFromString(propertyModel.controllerName);
+        UIViewController *controller = [class new];
+        controller.title = propertyModel.title;
+        [self.navigationController pushViewController:controller animated:YES];
+    } else if (propertyModel.url) {
+        NSURL *url = [NSURL URLWithString:propertyModel.url];
+        SFSafariViewController *safariVc = [[SFSafariViewController alloc] initWithURL:url];
+        [self presentViewController:safariVc animated:NO completion:nil];
+    }
 }
 
 #pragma mark - Builder

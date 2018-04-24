@@ -4,38 +4,68 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>MVVM</string>
+		<key>controller</key>
+		<string>HomeViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>JSPatch</string>
+		<key>controller</key>
+		<string>DZJSPatchViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>AFN&amp;ASI</string>
+		<key>controller</key>
+		<string>DZAFN_ASIViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>SDWebImage</string>
+		<key>controller</key>
+		<string>DZSDWebImageViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>响应链</string>
+		<key>controller</key>
+		<string>DZResponderViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>消息转发</string>
+		<key>controller</key>
+		<string>DZMessageForwardingViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>Runtime</string>
-		<key>protocol</key>
+		<key>controller</key>
 		<string>DZRuntimeViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>多线程</string>
-		<key>protocol</key>
-		<string>DZMultithreadingViewController</string>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>Runloop</string>
-		<key>protocol</key>
-		<string>DZMultithreadingViewController</string>
+		<key>controller</key>
+		<string>DZRunloopViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>算法</string>
-		<key>protocol</key>
-		<string>DZMultithreadingViewController</string>
+		<string>排序</string>
+		<key>controller</key>
+		<string>DZSortViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
 		<string>Block</string>
-		<key>protocol</key>
-		<string>DZMultithreadingViewController</string>
+		<key>controller</key>
+		<string>DZBlockViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>TCP/IP</string>
-		<key>protocol</key>
+		<string>多线程</string>
+		<key>controller</key>
 		<string>DZMultithreadingViewController</string>
 	</dict>
 </array>

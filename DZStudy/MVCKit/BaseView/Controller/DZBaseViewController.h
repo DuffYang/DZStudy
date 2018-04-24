@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DZBaseViewModel.h"
 
-@interface DZBaseViewController : UIViewController
+@interface DZBaseViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) NSArray *dataSource;
 

@@ -23,7 +23,7 @@
     for (NSDictionary *itemInfo in originArray) {
         DZBaseViewModel *model = [DZBaseViewModel new];
         model.title = [itemInfo objectForKey:@"title"];
-        model.controllerName = [itemInfo objectForKey:@"protocol"];;
+        model.controllerName = [itemInfo objectForKey:@"controller"];;
         [dataArray addObject:model];
     }
     return dataArray;

@@ -18,25 +18,15 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
+        NSArray *titles = @[@"NSThread", @"GCD", @"NSOperation"];
+        NSArray *controllers = @[@"NSThreadLoadViewController", @"GCDLoadViewController", @"NSOperationLoadViewController"];
         NSMutableArray *dataArray = [NSMutableArray array];
-        {
+        [titles enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             DZBaseViewModel *model = [DZBaseViewModel new];
-            model.title = @"NSThread";
-            model.controllerName = nil;
+            model.title = obj;
+            model.controllerName = controllers[idx];
             [dataArray addObject:model];
-        }
-        {
-            DZBaseViewModel *model = [DZBaseViewModel new];
-            model.title = @"GCD";
-            model.controllerName = nil;
-            [dataArray addObject:model];
-        }
-        {
-            DZBaseViewModel *model = [DZBaseViewModel new];
-            model.title = @"NSOperation";
-            model.controllerName = nil;
-            [dataArray addObject:model];
-        }
+        }];
         self.dataSource = dataArray;
     }
     return self;
