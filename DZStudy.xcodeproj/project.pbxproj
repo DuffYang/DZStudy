@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F2D84A42090751C00158640 /* DZJIanShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F2D84A32090751C00158640 /* DZJIanShuViewController.m */; };
 		7F77C7B81E84C36000CDAFE0 /* DZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F77C7B41E84C36000CDAFE0 /* DZBaseViewController.m */; };
 		7F77C7B91E84C36000CDAFE0 /* DZBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F77C7B71E84C36000CDAFE0 /* DZBaseViewModel.m */; };
 		7F77C7BF1E84CB7300CDAFE0 /* HomeViewDataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F77C7BE1E84CB7300CDAFE0 /* HomeViewDataSource.plist */; };
@@ -67,6 +68,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F2D84A22090751C00158640 /* DZJIanShuViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DZJIanShuViewController.h; sourceTree = "<group>"; };
+		7F2D84A32090751C00158640 /* DZJIanShuViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DZJIanShuViewController.m; sourceTree = "<group>"; };
 		7F77C7B31E84C36000CDAFE0 /* DZBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZBaseViewController.h; sourceTree = "<group>"; };
 		7F77C7B41E84C36000CDAFE0 /* DZBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZBaseViewController.m; sourceTree = "<group>"; };
 		7F77C7B61E84C36000CDAFE0 /* DZBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZBaseViewModel.h; sourceTree = "<group>"; };
@@ -193,6 +196,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F2D84A12090750A00158640 /* JianShu */ = {
+			isa = PBXGroup;
+			children = (
+				7F2D84A22090751C00158640 /* DZJIanShuViewController.h */,
+				7F2D84A32090751C00158640 /* DZJIanShuViewController.m */,
+			);
+			path = JianShu;
+			sourceTree = "<group>";
+		};
 		7F3556331E83D6E2001AC486 /* MVCKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -430,6 +442,7 @@
 		7FE9B02B2087492A00632D06 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				7F2D84A12090750A00158640 /* JianShu */,
 				7FCE7D13208EE042005E9E24 /* MVVM */,
 				7FCE7D08208EDCCC005E9E24 /* AFN&ASI */,
 				7FCE7D09208EDCCC005E9E24 /* JSPatch */,
@@ -648,6 +661,7 @@
 				7FE9B0362087492A00632D06 /* DZMultithreadingViewController.m in Sources */,
 				7F77C7C31E84CC2100CDAFE0 /* DZUtils.m in Sources */,
 				7FCE7D52208EE0A6005E9E24 /* UIRefreshControl+AFNetworking.m in Sources */,
+				7F2D84A42090751C00158640 /* DZJIanShuViewController.m in Sources */,
 				7FCE7D64208EE0A6005E9E24 /* MovieViewModel.m in Sources */,
 				7FE9B05F2087501400632D06 /* People.m in Sources */,
 				7FCE7D4E208EE0A6005E9E24 /* NSObject+ZXPUnicode.m in Sources */,

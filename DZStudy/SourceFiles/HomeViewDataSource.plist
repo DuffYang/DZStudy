@@ -4,6 +4,12 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>简书</string>
+		<key>controller</key>
+		<string>DZJIanShuViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>MVVM</string>
 		<key>controller</key>
 		<string>HomeViewController</string>
